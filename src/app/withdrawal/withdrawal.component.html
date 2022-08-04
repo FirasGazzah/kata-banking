@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-title">
+    <h2>Withdrawal</h2>
+  </div>
+  <div class="card-body">
+    <form (ngSubmit)="withdrawal()">
+      <input class="form-controls" required [ngModelOptions]="{standalone: true}" [(ngModel)]="amount" type="number" placeholder="Amount to withdrawal">
+      <div class="form-button">
+        <input type="submit" class="btn btn-primary">
+      </div>
+    </form>
+  </div>
+</div>

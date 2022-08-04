@@ -1,0 +1,20 @@
+<div class="container">
+  <app-create-account  *ngIf="!client"></app-create-account>
+
+
+
+  <div *ngIf="client" class="mt-4">
+   <h2> Welcome {{client?.firstName}} {{client?.lastName}}!</h2>
+   <h3>Current Balance: {{balance}}</h3>
+   <div class="row">
+    <div class="col"><app-deposit (balance)="myBalance($event)"></app-deposit></div>
+    <div class="col"><app-withdrawal (balance)="myBalance($event)"></app-withdrawal></div>
+   </div>
+
+
+    <h2>History</h2>
+    <app-history [operations]="client?.account?.operation"></app-history>
+  </div>
+
+</div>
+

@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="clientForm" (ngSubmit)="createClient()">
+      <input class="form-controls" formControlName="firstName" type="text" placeholder="First Name">
+      <input class="form-controls" formControlName="lastName" type="text" placeholder="Last Name">
+      <input class="form-controls" formControlName="phoneNumber" type="number" placeholder="Phone Number">
+      <input class="form-controls" formControlName="email" type="email" placeholder="E-mail">
+      <input class="form-controls" formControlName="password" type="password" placeholder="Password">
+
+      <div class="form-button">
+        <input type="submit" class="btn btn-primary" value="Create account">
+      </div>
+    </form>
+  </div>
+</div>

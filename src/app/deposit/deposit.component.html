@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-title">
+    <h2>Deposit</h2>
+  </div>
+  <div class="card-body">
+    <form (ngSubmit)="deposit()">
+      <input class="form-controls" [ngModelOptions]="{standalone: true}" [(ngModel)]="amount" type="number" placeholder="Amount to deposit">
+      <div class="form-button">
+        <input type="submit" class="btn btn-primary">
+      </div>
+    </form>
+  </div>
+</div>

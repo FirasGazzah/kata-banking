@@ -8,6 +8,7 @@ import { WithdrawalComponent } from './withdrawal/withdrawal.component';
 import { HistoryComponent } from './history/history.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxPrintModule } from 'ngx-print';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPrintModule
   ],
   providers: [],
   bootstrap: [AppComponent]
